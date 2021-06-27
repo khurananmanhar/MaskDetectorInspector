@@ -29,7 +29,7 @@ def detectMask(filename):
         layers.Dense(2, activation='softmax')
     ])
 
-    model.load_weights("maskAI/model_weights.h5")
+    model.load_weights("MaskDetectorInspector/model_weights.h5")
 
     pixels = plt.imread(filename)
     detector = MTCNN()
